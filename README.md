@@ -1,9 +1,14 @@
-# api documentation for  [msexcel-builder (v0.0.2)](https://github.com/chuanyi/msexcel-builder#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-msexcel-builder.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-msexcel-builder) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-msexcel-builder.svg)](https://travis-ci.org/npmdoc/node-npmdoc-msexcel-builder)
+# npmdoc-msexcel-builder
+
+#### api documentation for  [msexcel-builder (v0.0.2)](https://github.com/chuanyi/msexcel-builder#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-msexcel-builder.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-msexcel-builder) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-msexcel-builder.svg)](https://travis-ci.org/npmdoc/node-npmdoc-msexcel-builder)
+
 #### A tiny library to create Microsoft Office Excel(2007) files under Nodejs.
 
-[![NPM](https://nodei.co/npm/msexcel-builder.png?downloads=true)](https://www.npmjs.com/package/msexcel-builder)
+[![NPM](https://nodei.co/npm/msexcel-builder.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/msexcel-builder)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-msexcel-builder/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-msexcel-builder_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-msexcel-builder/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-msexcel-builder/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-msexcel-builder/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-msexcel-builder/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-msexcel-builder/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-msexcel-builder/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Charlie Zheng",
-        "email": "chuanyi.zheng@gmail.com"
+        "name": "Charlie Zheng"
     },
     "bugs": {
         "url": "https://github.com/chuanyi/msexcel-builder/issues"
@@ -43,13 +47,11 @@
     "main": "./lib/msexcel-builder.js",
     "maintainers": [
         {
-            "name": "chuanyi",
-            "email": "chuanyi.zheng@gmail.com"
+            "name": "chuanyi"
         }
     ],
     "name": "msexcel-builder",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/chuanyi/msexcel-builder.git"
@@ -60,45 +62,6 @@
     ],
     "version": "0.0.2"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module msexcel-builder](#apidoc.module.msexcel-builder)
-1.  [function <span class="apidocSignatureSpan">msexcel-builder.</span>createWorkbook (fpath, fname)](#apidoc.element.msexcel-builder.createWorkbook)
-
-
-
-# <a name="apidoc.module.msexcel-builder"></a>[module msexcel-builder](#apidoc.module.msexcel-builder)
-
-#### <a name="apidoc.element.msexcel-builder.createWorkbook"></a>[function <span class="apidocSignatureSpan">msexcel-builder.</span>createWorkbook (fpath, fname)](#apidoc.element.msexcel-builder.createWorkbook)
-- description and source-code
-```javascript
-createWorkbook = function (fpath, fname) {
-  return new Workbook(fpath, fname);
-}
-```
-- example usage
-```shell
-...
-var excelbuilder = require('msexcel-builder');
-'''
-
-Then create a sample workbook with one sheet and some data.
-
-'''javascript
-// Create a new workbook file in current working-path
-var workbook = excelbuilder.createWorkbook('./', 'sample.xlsx')
-
-// Create a new worksheet with 10 columns and 12 rows
-var sheet1 = workbook.createSheet('sheet1', 10, 12);
-
-// Fill some data
-sheet1.set(1, 1, 'I am title');
-for (var i = 2; i < 5; i++)
-...
 ```
 
 
