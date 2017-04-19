@@ -63,6 +63,25 @@
 
         </li>
 
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">msexcel-builder.</span>msexcel_builder</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.msexcel-builder.msexcel_builder">module msexcel-builder.msexcel_builder</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.msexcel-builder.msexcel_builder.createWorkbook">
+            function <span class="apidocSignatureSpan">msexcel-builder.msexcel_builder.</span>createWorkbook
+            <span class="apidocSignatureSpan">(fpath, fname)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
@@ -74,6 +93,44 @@
     <h2>
         <a href="#apidoc.element.msexcel-builder.createWorkbook" id="apidoc.element.msexcel-builder.createWorkbook">
         function <span class="apidocSignatureSpan">msexcel-builder.</span>createWorkbook
+        <span class="apidocSignatureSpan">(fpath, fname)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createWorkbook = function (fpath, fname) {
+  return new Workbook(fpath, fname);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var excelbuilder = require('msexcel-builder');
+```
+
+Then create a sample workbook with one sheet and some data.
+
+```javascript
+// Create a new workbook file in current working-path
+var workbook = excelbuilder.<span class="apidocCodeKeywordSpan">createWorkbook</span>('./', 'sample.xlsx')
+
+// Create a new worksheet with 10 columns and 12 rows
+var sheet1 = workbook.createSheet('sheet1', 10, 12);
+
+// Fill some data
+sheet1.set(1, 1, 'I am title');
+for (var i = 2; i &lt; 5; i++)
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.msexcel-builder.msexcel_builder" id="apidoc.module.msexcel-builder.msexcel_builder">module msexcel-builder.msexcel_builder</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.msexcel-builder.msexcel_builder.createWorkbook" id="apidoc.element.msexcel-builder.msexcel_builder.createWorkbook">
+        function <span class="apidocSignatureSpan">msexcel-builder.msexcel_builder.</span>createWorkbook
         <span class="apidocSignatureSpan">(fpath, fname)</span>
         </a>
     </h2>
